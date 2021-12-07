@@ -13,18 +13,19 @@ function App() {
       const data = await getBlogs();
       setBlogs(data);
     };
+
     fetchData();
   }, []);
   return (
     <>
       <Header />
+      <div className="App">
+        <h1>Blog List</h1>
+      </div>
       {blogs.map((blog) => (
         <BlogCard key={blog.id} {...blog} />
       ))}
       <Footer />
-      <div className="App">
-        <h1>Blog List</h1>
-      </div>
     </>
   );
 }
