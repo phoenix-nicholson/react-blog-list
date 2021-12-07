@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import BlogCard from './BlogCard';
 
-test('should render the blog card with title, subtitle, author and text', () => {
+test.skip('should render the blog card with title, subtitle, author and text', () => {
   const container = render(
     <BlogCard
       title="Test title"
