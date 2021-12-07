@@ -7,7 +7,6 @@ test('should render the blog card with title, subtitle, author and text', () => 
       title="Test title"
       subtitle="Test subtitle"
       text="lorem ipsum blah blah blah"
-      authors={{ name: 'phoenix' }}
       image="https://www.fillmurray.com/300/200"
     />
   );
